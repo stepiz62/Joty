@@ -1,7 +1,7 @@
 	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
 
-	Joty 2.0 Core, Joty 2.0 Workstation and Joty 2.0 Mobile are free software: you can redistribute it and/or modify
-	it under the terms of the GNU Lesser General Public License as published by
+	Joty 2.0 Core, Joty 2.0 Workstation and Joty 2.0 Mobile are free software: you can redistribute them and/or modify
+	them under the terms of the GNU Lesser General Public License as published by
 	the Free Software Foundation, either version 3 of the License, or
 	(at your option) any later version.
 
