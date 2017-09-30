@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            id="JotyPlugin"
+            name="Joty">
+      </category>
+      <view
+            category="JotyPlugin"
+            class="org.joty.jotyplugin.JotyDesignErrorWiew"
+            icon="icons/Joty16.png"
+            id="org.joty.jotyplugin.JotyDesignErrorView"
+            name="Joty Design Error View">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="org.joty.jotyplugin.views.DesignerLogView"
+               ratio="0.5"
+               relationship="right"
+               relative="org.eclipse.ui.views.ProblemView">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.help.contexts">
+      <contexts
+            file="contexts.xml">
+      </contexts>
+   </extension>
+
+</plugin>
