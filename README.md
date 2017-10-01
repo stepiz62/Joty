@@ -1,4 +1,4 @@
 # Joty
 the Delayed Desktop Transaction Framework
 
-see joty.org
+The description of the project is at http://joty.org.
