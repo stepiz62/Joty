@@ -67,7 +67,7 @@ import org.joty.workstation.gui.Term.TermEnclosable;
  */
 public class BlobComponent extends JPanel implements TermEnclosable {
 	/** 
-	 * This class is run by an added thread instantiated to offer multi-threading behavior to the {@code InfoDialog} instance launched 
+	 * This class is run by an added thread instantiated to offer multi-threading behavior to the {@code InfoDialog} launched instance
 	 */
 	
 	class ActionIterationActor implements Runnable {

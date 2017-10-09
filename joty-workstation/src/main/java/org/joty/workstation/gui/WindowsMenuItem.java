@@ -40,9 +40,11 @@ public class WindowsMenuItem {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (m_window instanceof JotyDialog)
+				if (m_window instanceof JotyDialog) 
 					((JotyDialog) m_window).m_activatedByWindowsMenu = true;
-				m_window.setVisible(true);
+				if (System.getProperty("os.name").toLowerCase().compareTo("linux") == 0)
+					m_window.setVisible(false);
+				m_window.setVisible(true);				
 			}
 		});
 	}

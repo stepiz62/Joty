@@ -33,6 +33,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 
 import org.joty.workstation.app.Application;
+import java.awt.Window.Type;
 
 /**
  * Is an information dialog to inform the user that some action is taking place.
@@ -54,10 +55,12 @@ public class InfoDialog extends JDialog {
 
 	public InfoDialog(Window owner, String message, final Thread thread) {
 		super(owner);
-		m_contentPanel.setBorder(new LineBorder(new Color(0, 0, 0)));
+		setUndecorated(true);
+		m_contentPanel.setOpaque(true);
+		m_contentPanel.setBorder(new LineBorder(new Color(0, 0, 0), 2, true));
 		m_contentPanel.setLayout(null);
 		m_lblMessage = new JotyLabel();
-		setText(message);
+		m_lblMessage.setOpaque(true);
 		m_lblMessage.setHorizontalAlignment(SwingConstants.CENTER);
 		m_lblMessage.setBounds(77, 33, 458, 45);
 		m_contentPanel.add(m_lblMessage);
@@ -65,6 +68,7 @@ public class InfoDialog extends JDialog {
 		getContentPane().add(m_contentPanel, BorderLayout.CENTER);
 
 		if (thread != null) {
+			setAlwaysOnTop(true);
 			JotyButton btnInterrupt = new JotyButton(Application.m_common.jotyLang("Interrupt"));
 			btnInterrupt.addActionListener(new ActionListener() {
 				@Override
@@ -74,12 +78,12 @@ public class InfoDialog extends JDialog {
 			});
 			btnInterrupt.setBounds(536, 82, 91, 23);
 			m_contentPanel.add(btnInterrupt);
-		}
-		setUndecorated(true);
+		} 
 		setResizable(false);
 		setBounds(100, 100, 632, 111);
+		setText(message);
 	}
-
+	
 	@Override
 	public void repaint() {
 		paintAll(getGraphics());
@@ -88,6 +92,7 @@ public class InfoDialog extends JDialog {
 	}
 
 	public void setText(String text) {
+		m_lblMessage.grabFocus();
 		m_lblMessage.setText("........ " + text + " ........");
 	}
 }

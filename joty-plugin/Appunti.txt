@@ -1,0 +1,5 @@
+per referenziare una view da codice:
+
+IViewPart viewer = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage().showView(<viewer_ID>);
+SomeImplementor actualViewer = (SomeImpementor) viewer;
+actualViewer.doSomething(); 

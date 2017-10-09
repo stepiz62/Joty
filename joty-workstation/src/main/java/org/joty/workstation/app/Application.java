@@ -1,5 +1,5 @@
 /*
-	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+	Copyright (c) 2013-2017, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
 
 	This file is part of Joty 2.0 Workstation.
 
@@ -95,7 +95,7 @@ import org.joty.app.JotyApplication;
 import org.joty.app.JotyException;
 import org.joty.app.LiteralsCollection;
 import org.joty.app.LiteralsCollection.LiteralStructParams;
-import org.joty.common.AbstractDbManager;
+import org.joty.common.ApplMessenger;
 import org.joty.common.BasicPostStatement;
 import org.joty.common.BasicPostStatement.Item;
 import org.joty.common.BasicPostStatement.ReturnedValueItem;
@@ -103,17 +103,16 @@ import org.joty.common.CaselessStringKeyMap;
 import org.joty.common.ConfigFile;
 import org.joty.common.ConfigFile.ConfigException;
 import org.joty.common.ErrorCarrier;
+import org.joty.common.ICommon;
 import org.joty.common.JotyMessenger;
 import org.joty.common.JotyTypes;
 import org.joty.common.LangLiteralRetCodeMapper;
-import org.joty.common.ParamContext; 
+import org.joty.common.ParamContext;
 import org.joty.common.ReportManager;
 import org.joty.common.Utilities;
 import org.joty.common.Utilities.Stocker;
 import org.joty.common.XmlTextEncoder;
-import org.joty.common.ApplMessenger; 
-import org.joty.common.ICommon; 
-import org.joty.data.JotyDate; 
+import org.joty.data.JotyDate;
 import org.joty.data.SearchQueryBuilderFront;
 import org.joty.data.WrappedField;
 import org.joty.web.AbstractWebClient;
@@ -554,7 +553,7 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 		ImageIcon icon = m_app.imageIcon("Userinput.png");
 		if (actualContainer instanceof JotyFrame)
 			actualContainer = ((JotyFrame) actualContainer).getContentPane();
-		retVal = (String) JOptionPane.showInputDialog(actualContainer, text, m_app.m_name, JOptionPane.PLAIN_MESSAGE, icon, selectionValues, initialSelectionValue);
+		retVal = (String) JOptionPane.showInputDialog(actualContainer, text, joptionPaneAppName(), JOptionPane.PLAIN_MESSAGE, icon, selectionValues, initialSelectionValue);
 		if (wrapAction)
 			m_app.m_frame.setAsFloatingBar(true);
 		return retVal;
@@ -677,6 +676,10 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 		return retVal;
 	}
 
+	private static String joptionPaneAppName() {
+		return m_app.m_name + (System.getProperty("os.name").toLowerCase().compareTo("linux") == 0 ? " ." : "");
+	}
+	
 	/**
 	 * It is the core method for messages to the user made by the framework. It
 	 * relies on the Java Swing class {@code JOptionPane}. It invokes
@@ -692,16 +695,17 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	 * @see Application#getWrapAction(Container)
 	 * @see JotyFrame#setAsFloatingBar(boolean)
 	 */
-	private static int message(int type, Container container, String text, int option, String caption) {
+	private static int message(int type, Container container, String text, int option, String caption) { 
 		boolean wrapAction = getWrapAction(container);
 		int retVal = 0;
+		String appName = joptionPaneAppName();
 		Container context = container != null ? container : (m_frontMostContainer instanceof JotyDialog ? m_frontMostContainer : m_app.m_frame);
 		switch (type) {
 			case JOptionPane.QUESTION_MESSAGE:
-				retVal = JOptionPane.showConfirmDialog(context, text, m_app.m_name, option, type, m_app.imageIcon("Question.png"));
+				retVal = JOptionPane.showConfirmDialog(context, text, appName, option, type, m_app.imageIcon("Question.png"));
 				break;
 			case JOptionPane.INFORMATION_MESSAGE:
-				JOptionPane.showMessageDialog(context, text, m_app.m_name, type, m_app.imageIcon("Information.png"));
+				JOptionPane.showMessageDialog(context, text, appName, type, m_app.imageIcon("Information.png"));
 				break;
 			case JOptionPane.WARNING_MESSAGE:
 				JOptionPane.showMessageDialog(context, 
@@ -973,6 +977,7 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	private String m_defaultBirtRender;
 	private String m_workStationFontSize;
 	public boolean m_connected;
+	private boolean go;
 	static boolean m_tracing;
 
 	public static final Cursor defCursor = Cursor.getDefaultCursor();
@@ -2582,13 +2587,32 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	public void openInfoDialog(String message, Thread thread, boolean waitCursor) {
 		if (m_infoDialog == null)
 			m_infoDialog = new InfoDialog(m_activationStack.size() > 0 ?  m_activationStack.pop() : m_frame, message, thread);
-		else
-			m_infoDialog.setText(message);
 		m_infoDialog.setLocationRelativeTo(null);
+		if (m_dialogsAreToBeForcedOnTop) {
+			m_infoDialog.repaint();
+			m_infoDialog.setVisible(false);
+			m_infoDialog.setVisible(true);
+			m_infoDialog.setVisible(false);
+		}
 		m_infoDialog.setVisible(true);
+		m_infoDialog.setText(message);
 		m_infoDialog.repaint();
 		if (waitCursor)
 			setWaitCursor(true);
+		go = false;
+		Runnable runnable = new Runnable() {
+
+			@Override
+			public void run() {
+				try {
+					Thread.sleep(100);
+					m_infoDialog.repaint();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		};
+		new Thread(runnable).start();
 	}
 
 	public void closeInfoDialog() {

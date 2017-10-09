@@ -19,13 +19,13 @@
 		</plugins>
 	</build>
 	<dependencies>
-<!--  uncomment for core development if needed -->
+<!--  uncomment for core development if needed  -->
 		<dependency>
 			<groupId>org.eclipse.birt.runtime</groupId>
 			<artifactId>org.eclipse.birt.runtime</artifactId>
 			<version>4.4.2</version>
 		</dependency>
-<!-- -->
+<!---->
 		<dependency>
 			<groupId>org.joty</groupId>
 			<artifactId>joty-core-common</artifactId>
