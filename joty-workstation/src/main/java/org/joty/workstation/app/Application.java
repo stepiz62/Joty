@@ -977,7 +977,6 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	private String m_defaultBirtRender;
 	private String m_workStationFontSize;
 	public boolean m_connected;
-	private boolean go;
 	static boolean m_tracing;
 
 	public static final Cursor defCursor = Cursor.getDefaultCursor();
@@ -2572,7 +2571,7 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 
 	public void openInfoDialog(String message, boolean waitCursor) {
 		openInfoDialog(message, null, waitCursor);
-	}
+	} 
 
 	/**
 	 * Opens the {@code InfoDialog} object and optionally provides it with the
@@ -2599,7 +2598,6 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 		m_infoDialog.repaint();
 		if (waitCursor)
 			setWaitCursor(true);
-		go = false;
 		Runnable runnable = new Runnable() {
 
 			@Override
