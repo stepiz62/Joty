@@ -523,7 +523,7 @@ public class JotyServer extends HttpServlet implements JotyMessenger {
 			String command = request.getParameter("command");
 			OutPrinterWrapper outPrinterWrapper = new OutPrinterWrapper(m_outWriter);
 			if (command == null)
-				outPrinterWrapper.append("<html><body>Hi,<br><br>this is Joty Server (v. 2.0.2) !<br><br>www.joty.org</body></html>");
+				outPrinterWrapper.append("<html><body>Hi,<br><br>this is Joty Server (v. 2.0.3) !<br><br>www.joty.org</body></html>");
 			else {
 				boolean sessionWasAlive = checkSession(request);
 				renderXmlHeader(outPrinterWrapper);
