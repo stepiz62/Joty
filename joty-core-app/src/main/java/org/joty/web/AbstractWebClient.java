@@ -75,7 +75,7 @@ import org.w3c.dom.NodeList;
  * The class is then equipped with the data structures useful to receive the
  * response from the server and provides a set of methods useful to process it,
  * one of the more important of them is {@code #getDocumentFromRespContent} that
- * creates the base (a {@codeorg.w3c.dom.Document} object) of further analysis:
+ * creates the base (a {@code org.w3c.dom.Document} object) of further analysis:
  * the extraction of the data result set, of the returned values , of the reason
  * of failure, of a large binary content.
  *
