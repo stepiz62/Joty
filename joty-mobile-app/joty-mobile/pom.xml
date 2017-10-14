@@ -7,7 +7,7 @@
 
 	<name>Joty 2.0 Mobile</name>
 	<description>Mobile part of Joty 2.0 framework </description>
-	<url>https://github.com/stepiz62/Joty/tree/master/joty-mobile</url>
+	<url>https://github.com/stepiz62/Joty/tree/master/joty-mobile-app/joty-mobile</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -28,6 +28,6 @@
 	<scm>
 		<connection>scm:git:git://github.com/stepiz62/Joty.git</connection>
 		<developerConnection>scm:git:ssh://github.com:stepiz62/Joty.git</developerConnection>
-		<url>https://github.com/stepiz62/Joty/tree/master/joty-mobile</url>
+		<url>https://github.com/stepiz62/Joty/tree/master/joty-mobile-app/joty-mobile</url>
 	</scm>
 </project>
