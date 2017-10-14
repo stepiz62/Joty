@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">JotyMobile_module</string>
+    <string name="Sharing_key">Sharing key</string>
+    <string name="User_name">User name</string>
+    <string name="Password">Password</string>
+    <string name="OldPassword">Old password</string>
+    <string name="NewPassword">New password</string>
+    <string name="RepeatPassword">Repeat password</string>
+    <string name="Ok">Ok</string>
+    <string name="Cancel">Cancel</string>
+    <string name="title_activity_idle">IdleActivity</string>
+    <string name="title_activity_web_view">Joty app discovery</string>
+    <string name="title_activity_change_password">ChangePasswordActivity</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_data_main">DataMainActivity</string>
+    <string name="exit">Exit</string>
+    <string name="lang">Language</string>
+    <string name="changepwd">Change password</string>
+</resources>
