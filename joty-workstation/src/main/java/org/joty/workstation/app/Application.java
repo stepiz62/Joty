@@ -2604,9 +2604,9 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 			public void run() {
 				try {
 					Thread.sleep(100);
-					m_infoDialog.repaint();
+					if (m_infoDialog != null)
+						m_infoDialog.repaint();
 				} catch (InterruptedException e) {
-					e.printStackTrace();
 				}
 			}
 		};
