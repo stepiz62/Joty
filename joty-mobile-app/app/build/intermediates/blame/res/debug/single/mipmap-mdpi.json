@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/app/build/intermediates/res/merged/debug/mipmap-mdpi/ic_launcher_round.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    }
+]

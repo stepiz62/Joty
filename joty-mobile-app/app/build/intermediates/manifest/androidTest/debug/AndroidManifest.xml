@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="joty.org.joty2mobileapp.test">
+
+    <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="26" />
+
+    <application>
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation android:name="android.support.test.runner.AndroidJUnitRunner"
+                     android:targetPackage="joty.org.joty2mobileapp"
+                     android:handleProfiling="false"
+                     android:functionalTest="false"
+                     android:label="Tests for joty.org.joty2mobileapp"/>
+</manifest>

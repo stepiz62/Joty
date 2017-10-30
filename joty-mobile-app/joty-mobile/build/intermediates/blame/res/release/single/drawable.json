@@ -1,0 +1,218 @@
+[
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/save.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/save.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_ab_back_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_ab_back_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/add.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/add.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/cancel.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/cancel.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_textfield_search_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_go_search_api_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_go_search_api_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/mainpage.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/mainpage.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_btn_check_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/home.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/home.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_arrow_drop_right_black_24dp.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/changepwd.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/changepwd.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/lang.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/lang.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_menu_overflow_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_menu_overflow_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_text_cursor_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_dialog_material_background.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/next.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/next.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/edit.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/edit.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/look.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/look.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/delete.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/delete.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/prev.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/prev.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_search_api_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_search_api_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ratingbar_indicator_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_seekbar_tick_mark_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/newrec.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/newrec.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_vector_test.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_vector_test.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/exit.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/exit.png"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ratingbar_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ratingbar_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_voice_search_api_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ratingbar_small_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ratingbar_small_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_ic_clear_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/textviewstates.xml",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/textviewstates.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/abc_btn_colored_material.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/drawable/search.png",
+        "source": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/src/main/res/drawable/search.png"
+    }
+]

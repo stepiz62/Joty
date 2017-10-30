@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/stefano/git_as/Joty/joty-mobile-app/joty-mobile/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/stefano/.android/build-cache/3ed1ea6e3d622030a5076f6542ad5ce0979d2b36/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
