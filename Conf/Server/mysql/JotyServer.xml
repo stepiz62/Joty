@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+
+	This file is part of Joty 2.0 Core.
+
+	Joty 2.0 Core is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Joty 2.0 Core is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with Joty 2.0 Core.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<config>
+	<searchPagination>
+<!-- Dbms specific attributes -->
+		<selectorStatement><![CDATA[
+			select * 
+			    from 
+			        (SELECT @rownum:=@rownum+1 rn, orderedSet.*
+			 			          FROM (SELECT * FROM '<openStm>' '<set>' 
+						                    					  '<whereConj>' '<whereClause>'
+						                    					  ORDER BY '<sortField>'
+						                    		  '<closeStm>'
+						                ) orderedSet,
+			            (SELECT @rownum:=0) r
+			        ) mySet
+			 where mySet.rn > '<pageSize>' * '<iteration>' and mySet.rn <= '<pageSize>' * ('<iteration>' + 1) + 1
+  			]]>
+		</selectorStatement>
+	</searchPagination>
+	<roleTable>role</roleTable>
+	<userRoleTable>userrole</userRoleTable>
+	<userTable>appuser</userTable>
+	<userDbField>Username</userDbField>
+	<passDbField>Password</passDbField>
+	<forcePwdChangeDbField>forcePwdChange</forcePwdChangeDbField>
+	<updatePassDbField>updatePwdDate</updatePassDbField>
+	<passwordExpDays>90</passwordExpDays>
+<!--  Application specific attributes -->
+	<connection-url>jdbc:mysql://localhost:3306/odontiordb?noAccessToProcedureBodies=true</connection-url>
+	<dbmsSessionPreset>USE `odontiordb`</dbmsSessionPreset>
+	<!-- 	<accessorClass>org.joty.basicaccessor.BasicAccessor</accessorClass> -->
+  	<accessorClass>org.odontior.accessor.OdontiorAccessor</accessorClass> 
+</config>

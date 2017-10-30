@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!-- 
+	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+
+	This file is part of Joty 2.0.
+
+	Joty 2.0 is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Joty 2.0 is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with Joty 2.0.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<xs:schema xmlns="http://www.joty.org" xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" 
+									elementFormDefault="qualified" id="JotyReq" targetNamespace="http://www.joty.org">
+	<xs:element name="JotyReq">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice maxOccurs="1" minOccurs="0">
+					<xs:sequence>
+						<xs:choice maxOccurs="1" minOccurs="0">
+							<xs:element maxOccurs="1" minOccurs="0" name="QueryStmnt" type="xs:string"/>
+							<xs:element maxOccurs="1" minOccurs="0" name="QueryDef" type="PostCell"/>
+						</xs:choice>
+						<xs:element maxOccurs="1" minOccurs="0" name="SmallBlobs">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="1" name="Field"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+					<xs:sequence>
+						<xs:element maxOccurs="1" minOccurs="0" name="Stmnts">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" name="Stmnt" type="PostCell"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element maxOccurs="unbounded" minOccurs="0" name="Binary" type="xs:string"/>
+					</xs:sequence>
+					<xs:element maxOccurs="1" minOccurs="0" name="ReportParms" type="Items"/>
+				</xs:choice>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="PostCell">
+		<xs:sequence>
+			<xs:element maxOccurs="1" minOccurs="1" name="SqlStmnt" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="AutoId" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="GenTable" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="VerifyExpr" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Method" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="FOPP" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="OPQ" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="AccessContext" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="PanelIdx" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="TermName" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="MainFilter" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="SortExpr" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="1" name="Iteration" type="xs:string"/>
+			<xs:element maxOccurs="1" minOccurs="0" name="NMRA" type="xs:string"/>			
+			<xs:element maxOccurs="1" minOccurs="0" name="Items" type="Items"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="Items">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Item">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="1" name="Name" type="xs:string"/>
+						<xs:element minOccurs="1" name="Val" type="xs:string"/>
+						<xs:element minOccurs="1" name="Type" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
