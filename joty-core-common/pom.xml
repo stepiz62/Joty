@@ -6,6 +6,7 @@
 	<version>2.0.2</version>
 	<name>Joty 2.0 Core - common</name>
 	<description>Core part of Joty 2.0 framework shared by any peer</description>
+	<url>https://github.com/stepiz62/Joty/tree/master/joty-core-common</url>
 	<build>
 		<plugins>
 			<plugin>
@@ -21,4 +22,23 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<licenses>
+		<license>
+			<name>The GNU Lesser General Public License, version 3</name>
+			<url>http://www.gnu.org/licenses/lgpl.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Stefano Pizzocaro</name>
+			<email>stefano.pizzocaro@mail.com</email>
+			<organization>stepiz62.com</organization>
+			<organizationUrl>http://www.stepiz62.com</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:git://github.com/stepiz62/Joty.git</connection>
+		<developerConnection>scm:git:ssh://github.com:stepiz62/Joty.git</developerConnection>
+		<url>https://github.com/stepiz62/Joty/tree/master/joty-core-common</url>
+	</scm>
 </project> 

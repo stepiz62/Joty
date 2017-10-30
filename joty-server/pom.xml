@@ -7,6 +7,7 @@
 	<packaging>jar</packaging>
 	<name>Joty 2.0 - Server</name>
 	<description>Joty 2.0 framework server part</description>
+	<url>https://github.com/stepiz62/Joty/tree/master/joty-server</url>
 	<build>
 		<plugins>
 			<plugin>
@@ -34,4 +35,23 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<licenses>
+		<license>
+			<name>The GNU Lesser General Public License, version 3</name>
+			<url>http://www.gnu.org/licenses/lgpl.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Stefano Pizzocaro</name>
+			<email>stefano.pizzocaro@mail.com</email>
+			<organization>stepiz62.com</organization>
+			<organizationUrl>http://www.stepiz62.com</organizationUrl>
+		</developer>
+	</developers>
+	<scm>
+		<connection>scm:git:git://github.com/stepiz62/Joty.git</connection>
+		<developerConnection>scm:git:ssh://github.com:stepiz62/Joty.git</developerConnection>
+		<url>https://github.com/stepiz62/Joty/tree/master/joty-server</url>
+	</scm>
 </project>

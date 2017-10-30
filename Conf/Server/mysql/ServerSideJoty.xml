@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+ 	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+	
+	This file is part of Joty 2.0.
+	
+	Joty 2.0 is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+	
+	Joty 2.0 is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+	
+	You should have received a copy of the GNU Lesser General Public License
+	along with Joty 2.0.  If not, see <http://www.gnu.org/licenses/>.
+ -->
+<config>
+	<jdbcDriverClass>com.mysql.jdbc.Driver</jdbcDriverClass>
+	<searchPagination>
+		<pageSize>10</pageSize>
+	</searchPagination>
+	<autoIncrementID>true</autoIncrementID>
+	<autoIncrementByAddNew>false</autoIncrementByAddNew>
+	<!-- sqlDateExpr is used by Joty to submit a date value to the dbms -->
+	<!-- Oracle : to_date('%1$s','yyyy-MM-dd HH24:MI:SS') -->
+	<!-- MySql : '%1$s' -->
+	<!-- Sql Server : '%1$s' -->
+	<sqlDateExpr>'%1$s'</sqlDateExpr>
+	<dateFormat>dd/MM/yyyy</dateFormat>
+	<dateTimeFormat>dd/MM/yyyy HH:mm:ss</dateTimeFormat>
+	<dbmsDateFormat>yyyy-MM-dd</dbmsDateFormat>
+	<dbmsDateTimeFormat>yyyy-MM-dd HH:mm:ss</dbmsDateTimeFormat>
+	<appIconFile16>OdontiorIcon16.png</appIconFile16>
+	<appIconFile32>OdontiorIcon32.png</appIconFile32>
+	<!-- server conf.  -->
+	<xmlDateFormat>yyyyMMddHHmmss</xmlDateFormat>
+	<dataSourceName>jdbc/myMySql</dataSourceName>
+	<defaultSeqName>mySeq</defaultSeqName>
+	<!-- passDbTable, userDbField, passDbField are used when Authentication is performed internally (not auth. server);	-->
+	<passwordLen>10</passwordLen>
+	<dbmsUserPwdStatement>%1$s USER %2$s IDENTIFIED BY '%3$s'</dbmsUserPwdStatement>
+	<dbmsChangePwdStatement>SET PASSWORD FOR '%1$s'@'%%' = PASSWORD('%2$s')</dbmsChangePwdStatement>
+	<dbmsUserGrantedRolesStmnt>GRANT SELECT, INSERT, UPDATE, DELETE  ON odontiordb.* TO '%1$s'@'%%'</dbmsUserGrantedRolesStmnt>
+	<JotyDeskLog>JotyDeskLog.log</JotyDeskLog>
+	<deskTracing>false</deskTracing>
+	<debug>false</debug>
+  	<rptDesignsPath>reportDesigns</rptDesignsPath>
+	<rptDocumentsPath>reportDocuments</rptDocumentsPath>
+	<rptOutputsPath>reportOutputs</rptOutputsPath>
+	<rptLogsPath>reportLogs</rptLogsPath>
+	<defaultFont>Arial</defaultFont>
+	<defaultFontSize>11</defaultFontSize>
+	<sundayIsFDOW>true</sundayIsFDOW>
+
+	<!-- the following is simply the name used for registering server cert in the system keystore of the client -->
+	<certificateAlias>jotyCert</certificateAlias>
+	<!-- remove or set to false the following in production system otherwise user will be asked to remove cert from the (client) system keystore -->
+	<certTesting>false</certTesting>
+	<!-- uncomment the line below to define the Authentication Server Url 	-->
+	<!--	<authServer>........</authServer> 	-->
+	<!-- sslPort is for use of non standard https port  -->
+	<sslPort>8443</sslPort>
+	<fieldOrdinality>false</fieldOrdinality>
+	<logDbActions>true</logDbActions>
+	<reuseMetadataOnLoadForStore>true</reuseMetadataOnLoadForStore>
+	<addRemoveUsers>true</addRemoveUsers>
+	<dbManagerClass>org.odontior.common.OdontiorDbManager</dbManagerClass>
+	<remoteAccessor>true</remoteAccessor> 
+ 	<languages>en;it;</languages> 
+ 	<use_BIRT_engine>true</use_BIRT_engine>
+ 	<useAppOptions>true</useAppOptions> 
+	<shared>false</shared> 
+ 	<sharingKeyField>sharingKey</sharingKeyField> 
+ 	<dialogsDesignedOnMac>false</dialogsDesignedOnMac>
+</config>

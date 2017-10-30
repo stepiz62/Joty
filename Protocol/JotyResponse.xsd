@@ -1,0 +1,93 @@
+<?xml version="1.0"  encoding="UTF-8" standalone="no" ?>
+<!--  
+	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+
+	This file is part of Joty 2.0 Core.
+
+	Joty 2.0 Core is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Joty 2.0 Core is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with Joty 2.0 Core.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<xs:schema id="root" targetNamespace="http://www.joty.org" xmlns="http://www.joty.org" 
+			xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="qualified" elementFormDefault="qualified">
+	<xs:element name="JotyResp">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Result" minOccurs="1" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Value" type="xs:string" minOccurs="1"
+								maxOccurs="1" />
+							<xs:element name="Reason" type="xs:string" minOccurs="0"
+								maxOccurs="1" />
+							<xs:element name="Code" type="xs:string" minOccurs="0"
+								maxOccurs="1" />
+							<xs:element name="GenIDs" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="GenID" type="xs:string"
+											minOccurs="0" maxOccurs="unbounded" />
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="ConfigData" type="xs:string"
+								minOccurs="0" maxOccurs="1" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Structure" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Field" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="name" form="unqualified" type="xs:string" />
+									<xs:attribute name="type" form="unqualified" type="xs:string" />
+									<xs:attribute name="len" form="unqualified" type="xs:string" />
+									<xs:attribute name="dec" form="unqualified" type="xs:string" />
+									<xs:attribute name="pos" form="unqualified" type="xs:string" />
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Data" minOccurs="0" maxOccurs="1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Record" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:choice><!-- the second option corresponds to configuration 'fieldOrdinality' 
+											= true -->
+										<xs:element name="c" type="xs:string" minOccurs="0"
+											maxOccurs="unbounded" />
+										<xs:sequence>
+											<!-- to be extended as required (up to max number of fields) -->
+											<xs:element name="c1" type="xs:string" minOccurs="0"
+												maxOccurs="1" />
+											<xs:element name="c2" type="xs:string" minOccurs="0"
+												maxOccurs="1" />
+											<!-- . . . . . . . . . . . . . . . . . . .. . . -->
+											<xs:element name="cNmax" type="xs:string"
+												minOccurs="0" maxOccurs="1" />
+										</xs:sequence>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Report" minOccurs="0" maxOccurs="1"></xs:element>
+				<xs:element name="S_ID" type="xs:string" minOccurs="1"
+					maxOccurs="1" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

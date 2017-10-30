@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  
+	Copyright (c) 2013-2015, Stefano Pizzocaro. All rights reserved. Use is subject to license terms.
+
+	This file is part of Joty 2.0 Core.
+
+	Joty 2.0 Core is free software: you can redistribute it and/or modify
+	it under the terms of the GNU Lesser General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	Joty 2.0 Core is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU Lesser General Public License for more details.
+
+	You should have received a copy of the GNU Lesser General Public License
+	along with Joty 2.0 Core.  If not, see <http://www.gnu.org/licenses/>.
+-->
+<config>
+	<datasource>
+		<jndi-name>myOracleDS</jndi-name>
+		<connection-url>jdbc:oracle:thin:@localhost:1521:xe</connection-url>
+		<jdbcDriverClass>oracle.jdbc.OracleDriver</jdbcDriverClass>
+		<user-name></user-name>
+		<password></password>
+		<metadata>
+			<type-mapping>Oracle10g</type-mapping>
+		</metadata>
+	</datasource>
+	<searchPagination>
+		<pageSize>100</pageSize>
+		<!-- dbms specific -->
+		<selectorStatement><![CDATA[
+			SELECT *
+			  FROM 
+			        (SELECT ROWNUM rn, orderedSet.*
+ 			          FROM (SELECT * FROM '<openStm>' '<set>' 
+			                    					  '<whereConj>' '<whereClause>'
+			                    					  ORDER BY '<sortField>'
+			                    		  '<closeStm>'
+			                ) orderedSet,
+			        ) mySet
+			  where mySet.rn > '<pageSize>' * '<iteration>' and mySet.rn <= '<pageSize>' * ('<iteration>' + 1) + 1
+  			]]>
+		</selectorStatement>
+	</searchPagination>
+	<autoIncrementID>true</autoIncrementID>
+	<autoIncrementByAddNew>false</autoIncrementByAddNew>
+	<!-- sqlDateExpr is used by Joty to submit a date value to the dbms -->
+	<!-- Oracle : to_date('%1$s','yyyy-MM-dd HH24:MI:SS') -->
+	<!-- MySql : '%1$s' -->
+	<!-- Sql Server : '%1$s' -->
+	<sqlDateExpr>to_date('%1$s','yyyy-MM-dd HH24:MI:SS')</sqlDateExpr>
+	<dateFormat>dd/MM/yyyy</dateFormat>
+	<dateTimeFormat>dd/MM/yyyy HH:mm:ss</dateTimeFormat>
+	<dbmsDateFormat>yyyy-MM-dd</dbmsDateFormat>
+	<dbmsDateTimeFormat>yyyy-MM-dd HH:mm:ss</dbmsDateTimeFormat>
+	<appIconFile16>MarsExplorersIcon16.jpg</appIconFile16>
+	<appIconFile32>MarsExplorersIcon32.jpg</appIconFile32>
+	<!-- db management  -->
+	<!-- <dbManagerClass>org.joty.common.DbManager</dbManagerClass> -->
+	<dbManagerClass>marsExplorers.MarsExplorersDbManager</dbManagerClass>
+	<nextValExpr>NVL(MAX(%1$s)+ 1, 1)</nextValExpr>
+	<defaultSeqName>mySeq</defaultSeqName>
+	<forcePwdChangeDbField>forcePwdChange</forcePwdChangeDbField>
+	<updatePassDbField>updatePwdDate</updatePassDbField>
+	<passwordLen>10</passwordLen>
+	<passwordExpDays>90</passwordExpDays>
+	<dbmsUserPwdStatement>%1$s USER %2$s IDENTIFIED BY %3$s</dbmsUserPwdStatement>
+	<dbmsUserGrantedRolesStmnt>GRANT schema_rw_role, connect TO %1$s</dbmsUserGrantedRolesStmnt>
+	<dbmsSessionPreset>ALTER SESSION SET current_schema=myDbSchema</dbmsSessionPreset>
+	<JotyDeskLog>JotyDeskLog.log</JotyDeskLog>
+	<deskTracing>false</deskTracing>
+	<debug>true</debug>
+	<rptDesignsPath>reportDesigns</rptDesignsPath>
+	<rptDocumentsPath>reportDocuments</rptDocumentsPath>
+	<rptOutputsPath>reportOutputs</rptOutputsPath>
+	<rptLogsPath>reportLogs</rptLogsPath>
+	<defaultFont>Arial</defaultFont>
+	<defaultFontSize>11</defaultFontSize>
+	<sundayIsFDOW>true</sundayIsFDOW>
+	<addRemoveUsers>false</addRemoveUsers>
+ 	<accessorClass>org.joty.basicaccessor.BasicAccessor</accessorClass>
+ 	<languages>en;it;</languages> 
+ 	<shared>false</shared> 
+ 	<sharingKeyField></sharingKeyField> 
+ 	<useAppOptions>false</useAppOptions> 
+ 	<dialogsDesignedOnMac>false</dialogsDesignedOnMac>
+ 	<loc_lang>en</loc_lang>
+ 	<loc_country>US</loc_country>
+</config>
