@@ -363,18 +363,23 @@ public class DataScrollingPanel extends DataAccessPanel  {
 		if (m_gridManager != null) {
 			if (m_IdFieldName.length() > 0)
 				keyElem(m_IdFieldName).clear();
-			if (gridRowPos() == -1) {
-				for (Term term : m_terms)
-					term.clearNonStructuredCtrl();
-				m_gridKey = -1;
-				setContextParams();
-			} else {
+			boolean rowSelected = gridRowPos() != -1;
+			if (rowSelected) {
 				m_gridKey = idFromGridRow();
+				if (m_gridKey == 0)
+					rowSelected = false;
+			}
+			if (rowSelected) {
 				Record row = m_gridManager.getRecordBuffer();
 				getKeyDataFromRow(row, m_keyElems.vector);
 				setContextParams();
 				effectsOnTerms(row);
-			}
+			} else  {
+				for (Term term : m_terms)
+					term.clearNonStructuredCtrl();
+				m_gridKey = -1;
+				setContextParams();
+			} 
 			updateVisibilityBasingOnData();
 			effectsOnForm();
 		}

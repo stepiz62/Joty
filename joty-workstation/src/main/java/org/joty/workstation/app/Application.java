@@ -725,7 +725,7 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	}
 
 	public static void warningMsg(String text) {
-		warningMsg(text, m_app == null ? "Joty" : m_app.m_name);
+		warningMsg(text, m_app == null ? "Joty" : joptionPaneAppName());
 	}
 
 	public static void warningMsg(String text, Object[] objects) {
@@ -733,7 +733,7 @@ public class Application implements ClipboardOwner, ApplMessenger, JotyApplicati
 	}
 
 	public static void warningMsg(String text, String caption) {
-		warningMsg(null, text, caption == null ? m_app.m_name : caption);
+		warningMsg(null, text, caption == null ? joptionPaneAppName() : caption);
 	}
 
 	public static int yesNoCancelQuestion(Container container, String text, int option) {

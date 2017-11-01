@@ -620,8 +620,11 @@ public class JotyDataBuffer {
 	}
 
 	WrappedField getKeyVal(String fieldName, int pos) {
-		if ((m_firstKeyPos >= 0 || m_keyName != null) && m_records.size() > 0) {
-			return m_records.get(pos >= 0 ? pos : m_cursorPos).m_data.get(fieldName == null ? (m_keyName != null ? m_fieldNamesMap.get(m_keyName) : m_firstKeyPos) : m_fieldNamesMap.get(fieldName));
+		int recIndex = pos >= 0 ? pos : m_cursorPos;
+		if ((m_firstKeyPos >= 0 || m_keyName != null) && m_records.size() > 0 && recIndex < m_records.size()) {
+			return m_records.get(recIndex).m_data.get(fieldName == null ? 
+															(m_keyName != null ? m_fieldNamesMap.get(m_keyName) : m_firstKeyPos) : 
+															m_fieldNamesMap.get(fieldName));
 		} else
 			return new WField(m_app);
 	}

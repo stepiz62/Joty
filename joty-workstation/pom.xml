@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.joty</groupId>
 	<artifactId>joty-workstation</artifactId>
-	<version>2.0.3</version>
+	<version>2.0.4</version>
 	<name>Joty 2.0 Workstation</name>
 	<description>Joty 2.0 framework part targeted to develop workstation applications  </description>
 	<url>https://github.com/stepiz62/Joty/tree/master/joty-workstation</url>
