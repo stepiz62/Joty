@@ -24,7 +24,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v4.app.FragmentManager;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
@@ -36,6 +35,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.fragment.app.FragmentManager;
 
 import org.joty.common.JotyTypes;
 import org.joty.data.JotyDate;
