@@ -23,14 +23,15 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Surface;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ProgressBar;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import org.joty.app.Common;
 import org.joty.common.ParamContext;
@@ -71,7 +72,7 @@ import java.util.Vector;
  * @see ActivityController
  */
 
-public class JotyActivity extends android.support.v7.app.AppCompatActivity {
+public class JotyActivity extends AppCompatActivity {
 
     public void addExtrasInOpenActivity(Bundle extras) {
     }
