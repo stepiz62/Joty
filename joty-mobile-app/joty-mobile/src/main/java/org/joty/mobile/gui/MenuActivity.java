@@ -20,7 +20,6 @@
 package org.joty.mobile.gui;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.SubMenu;
@@ -28,6 +27,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
 
 import org.joty.common.CaselessStringKeyMap;
 import org.joty.common.ParamContext;
