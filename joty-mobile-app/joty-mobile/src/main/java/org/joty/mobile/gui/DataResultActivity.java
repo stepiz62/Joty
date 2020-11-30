@@ -21,11 +21,12 @@ package org.joty.mobile.gui;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+
+import androidx.annotation.Nullable;
 
 import org.joty.mobile.app.JotyApp;
 import org.joty.mobile.R;
