@@ -22,8 +22,9 @@ package org.joty.mobile.gui;
 import android.app.DatePickerDialog;
 import android.app.Dialog;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
 import android.widget.DatePicker;
+
+import androidx.fragment.app.DialogFragment;
 
 import org.joty.mobile.gui.TextTerm;
 
@@ -38,7 +39,7 @@ import java.util.Calendar;
  * @see org.joty.data.JotyDate
  */
 
-public class JotyDatePicker extends android.support.v4.app.DialogFragment
+public class JotyDatePicker extends DialogFragment<>
         implements android.app.DatePickerDialog.OnDateSetListener {
     TextTerm m_term;
 
